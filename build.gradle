@@ -11,10 +11,14 @@ buildscript {
 	}
 }
 
+plugins {
+	id 'com.craigburke.bower-installer' version '2.5.1'
+}
+
 apply plugin: 'java'
 apply plugin: 'spring-boot'
 apply plugin: 'org.flywaydb.flyway'
-apply plugin: 'com.craigburke.bower-installer'
+
 
 jar {
 	baseName = 'leogen'
